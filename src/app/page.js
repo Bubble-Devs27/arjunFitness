@@ -1,103 +1,45 @@
-import Image from "next/image";
 
+"use client";
+
+import Navbar from "@/Components/Navbar";
+import WhyChooseUs from "@/Components/WhyChooseUs";
+import {motion} from "framer-motion"
+ import { FaChevronDown } from 'react-icons/fa';
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+    <Navbar/>
+    <div className="bg-black" >
+     <motion.div
+      className=" h-[91vh] md:h-screen sm:h-screen w-full  bg-cover bg-center bg-no-repeat css-back  flex justify-between items-center flex-col " 
+       initial = {{opacity :0 , y:0}} animate = {{opacity :1 , y:0}} transition={{duration :1  }}>
+      < div className="mt-[30vh]"  >
+       <motion.h1 className="text-8xl text-center font-mono "
+       initial = {{opacity :0 , y:10}}
+       animate = {{opacity :1 , y:0}}
+       transition={{duration :0.8  , delay :0.5}}
+       >ARJUN SAINI</motion.h1> 
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+         <motion.p className="text-2xl w-[50vw] text-center mt-7 text-[#B5B5B5] italic"
+         initial = {{opacity :0 , y:-10}}
+         animate = {{opacity :1 , y:0}}
+         transition={{duration :0.8  , delay :0.5}}>
+         Expert guided fitness programs tailored for ages 22-60. Whether you’re aiming for a six pack or overall fitness, we’ve got you covered.
+        </motion.p> 
+      </ div>
+
+      <div>
+        <motion.div className="flex flex-col justify-center items-center"  initial = {{opacity :0 , y:0}} animate = {{opacity :1 , y:0}} transition={{duration :1 ,delay :2  }}>
+          <FaChevronDown size={24} color="white" />
+         </motion.div>
+        <motion.div className="flex flex-col justify-center items-center"  initial = {{opacity :0 , y:0}} animate = {{opacity :1 , y:0}} transition={{duration :1 ,delay :2  }}>
+          <FaChevronDown size={24} color="white" />
+         </motion.div>
+        <motion.h1 className="text-xl mt-2 mb-1.5 "  initial = {{opacity :0 , y:0}} animate = {{opacity :1 , y:0}} transition={{duration :1 ,delay :2  }}>Start your Journey</motion.h1>
+      </div>
+     </motion.div>
     </div>
+    <WhyChooseUs/>
+    </>
   );
 }
