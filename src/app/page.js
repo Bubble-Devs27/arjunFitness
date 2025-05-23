@@ -1,7 +1,9 @@
 
 "use client";
 
+import ACECertified from "@/Components/ACECertified";
 import Navbar from "@/Components/Navbar";
+import Plans from "@/Components/Plans";
 import WhyChooseUs from "@/Components/WhyChooseUs";
 import {motion} from "framer-motion"
  import { FaChevronDown } from 'react-icons/fa';
@@ -14,13 +16,13 @@ export default function Home() {
       className=" h-[91vh] md:h-screen sm:h-screen w-full  bg-cover bg-center bg-no-repeat css-back  flex justify-between items-center flex-col " 
        initial = {{opacity :0 , y:0}} animate = {{opacity :1 , y:0}} transition={{duration :1  }}>
       < div className="mt-[30vh]"  >
-       <motion.h1 className="text-8xl text-center font-mono "
+       <motion.h1 className=" md:text-8xl sm:text-6xl text-5xl text-center font-mono text-white "
        initial = {{opacity :0 , y:10}}
        animate = {{opacity :1 , y:0}}
        transition={{duration :0.8  , delay :0.5}}
        >ARJUN SAINI</motion.h1> 
 
-         <motion.p className="text-2xl w-[50vw] text-center mt-7 text-[#B5B5B5] italic"
+         <motion.p className="text-[16px] w-[80vw]  sm:w-[80vw] md:w-[70vw] lg:w-[50vw] text-center mt-7 text-[#B5B5B5] italic "
          initial = {{opacity :0 , y:-10}}
          animate = {{opacity :1 , y:0}}
          transition={{duration :0.8  , delay :0.5}}>
@@ -40,6 +42,9 @@ export default function Home() {
      </motion.div>
     </div>
     <WhyChooseUs/>
+    <ACECertified/>
+    <ACECertified/>
+    <Plans/>
     </>
   );
 }

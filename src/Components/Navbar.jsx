@@ -9,7 +9,7 @@ export default function Navbar() {
     className="fixed top-8 left-0 w-full z-50  justify-center items-center hidden md:flex  "
     initial = {{opacity :0 , y:-10}}
     animate = {{opacity :1 , y:0}}
-    transition={{duration :0.8  , delay :0.5}}
+    transition={{duration :0.8  , delay :2}}
     >
       <div className="bg-[rgba(92,92,92,0.15)] backdrop-blur-lg py-4 px-10 rounded-2xl  ">
         <Link href="/" className="text-xl font-normal text-white mr-12">

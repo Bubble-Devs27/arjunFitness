@@ -26,7 +26,7 @@ const WhyChooseUs = () => {
     <section className="bg-black text-white py-32 px-4">
       <div className="max-w-6xl mx-auto">
         <motion.div initial = {{opacity :0 , y :70}} whileInView={{opacity :1 , y:0}} transition={{duration :0.6 }}  viewport={{amount: 0.1 }} className="text-center mb-16  ">
-          <h2 className="text-4xl font-bold mb-2">Why choose us</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-2">Why choose us</h2>
           <div className="flex items-center justify-center">
             <div className="w-2 h-2 bg-white rounded-full"></div>
             <div className="w-[30vw] h-px bg-white mx-2"></div>
