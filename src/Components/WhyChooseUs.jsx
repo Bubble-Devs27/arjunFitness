@@ -23,7 +23,7 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="bg-black text-white py-32 px-4" id="why-choose-us">
+    <section className="bg-black text-white pt-32 px-4" id="why-choose-us">
       <div className="max-w-6xl mx-auto">
         <motion.div initial = {{opacity :0 , y :70}} whileInView={{opacity :1 , y:0}} transition={{duration :0.6 }}  viewport={{amount: 0.1 }} className="text-center mb-16  ">
           <h2 className="text-3xl md:text-4xl font-bold mb-2">Why choose us</h2>

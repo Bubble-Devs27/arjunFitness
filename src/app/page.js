@@ -51,8 +51,10 @@ export default function Home() {
      </motion.div>
     </div>
     <WhyChooseUs/>
+    <div id='ace' className="h-2 mt-30"></div>
     <ACECertified/>
     <Myjourney/>
+    <div id='plan' className="h-28"></div>
     <Plans/>
     <Testimonials/>
     </>

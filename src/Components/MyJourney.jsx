@@ -22,7 +22,7 @@ const Myjourney = () => {
             chiseled, muscular who now help others achieve their fitness goals.
           </p>
           <button className="bg-white text-gray-900 px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors">
-            View Certification
+            View Gallery
           </button>
         </div>
         {/* Right certificate image */}

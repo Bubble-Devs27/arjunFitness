@@ -117,7 +117,7 @@ const Plans = () => {
     setExpandedTab(expandedTab === tabId ? null : tabId);
   };
   return (
-    <motion.div className='flex flex-col  justify-center items-center mt-28' id='plan' initial ={{opacity :0 ,y:50  }} whileInView={{opacity :1 ,y:0  }} transition={{duration :1 ,delay :0.3 }}  viewport={{amount: 0.3 , once :true  }}>
+    <motion.div className='flex flex-col  justify-center items-center '  initial ={{opacity :0 ,y:50  }} whileInView={{opacity :1 ,y:0  }} transition={{duration :1 ,delay :0.3 }}  viewport={{amount: 0.3 , once :true  }}>
       <div className=' w-[80%] sm:w-[60%] text-center'>
         <h1 className='text-3xl sm:text-4xl'>Training Programs</h1>
         <h1 className='text-[16px] sm:text-xl text-gray-400 mt-2.5'>Our plans are designed to be affordable, and aligned to your unique needs.</h1>

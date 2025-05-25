@@ -1,8 +1,10 @@
 import React from 'react';
 import { easeOut, motion } from "framer-motion";
+import logo from '../app/Assets/cert.png'
+import Image from 'next/image';
 const ACECertified = () => {
   return (
-    <motion.div className="px-2 sm:px-6  md:px-9 " initial ={{opacity :0 , y :70 }} whileInView={{opacity :1 , y:0 }} transition={{duration :0.6 }}  viewport={{amount: 0.1, once :true   }} id='ace'>
+    <motion.div className="px-2 sm:px-6  md:px-9 " initial ={{opacity :0 , y :70 }} whileInView={{opacity :1 , y:0 }} transition={{duration :0.6 }}  viewport={{amount: 0.1, once :true   }} >
       <div className="md:flex items-center justify-between   mt-4 text-white p-8 rounded-lg   overflow-hidden rubBack">
        
         {/* Left content */}
@@ -21,9 +23,9 @@ const ACECertified = () => {
         </div>
          {/* Right certificate image */}
         <div className="relative ml-8 ">
-          <motion.div className="transform -rotate-30 translate-x-10 translate-y-15 bg-white rounded-2xl">
-            <img 
-              src="/path-to-your-certificate-image.png" 
+          <motion.div className="transform -rotate-30 translate-x-10 translate-y-15 rounded-2xl">
+            <Image 
+              src={logo} 
               alt="ACE Certification" 
               className="w-64 h-48 object-cover rounded-lg shadow-lg"
             />
