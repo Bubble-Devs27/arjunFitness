@@ -2,20 +2,29 @@
 "use client";
 
 import ACECertified from "@/Components/ACECertified";
+import Myjourney from "@/Components/MyJourney";
 import Navbar from "@/Components/Navbar";
 import Plans from "@/Components/Plans";
+import Testimonials from "@/Components/Testimonials";
 import WhyChooseUs from "@/Components/WhyChooseUs";
 import {motion} from "framer-motion"
- import { FaChevronDown } from 'react-icons/fa';
+import { FaChevronDown } from 'react-icons/fa';
+import Image from 'next/image';
+import logo from './Assets/logo.png'
 export default function Home() {
+  console.log(logo)
   return (
     <>
     <Navbar/>
-    <div className="bg-black" >
+    <div className="bg-black" id="about" >
+      
      <motion.div
       className=" h-[91vh] md:h-screen sm:h-screen w-full  bg-cover bg-center bg-no-repeat css-back  flex justify-between items-center flex-col " 
-       initial = {{opacity :0 , y:0}} animate = {{opacity :1 , y:0}} transition={{duration :1  }}>
-      < div className="mt-[30vh]"  >
+       initial = {{opacity :0 , y:0}} animate = {{opacity :1 , y:0}} transition={{duration :2  }}>
+      <div className=" w-[98%] hidden sm:flex">
+      <Image src={logo} alt="Logo" width={100} height={100} />  
+      </div>
+      < div className="sm:mt-[10vh] mt-[30vh]"  >
        <motion.h1 className=" md:text-8xl sm:text-6xl text-5xl text-center font-mono text-white "
        initial = {{opacity :0 , y:10}}
        animate = {{opacity :1 , y:0}}
@@ -43,8 +52,9 @@ export default function Home() {
     </div>
     <WhyChooseUs/>
     <ACECertified/>
-    <ACECertified/>
+    <Myjourney/>
     <Plans/>
+    <Testimonials/>
     </>
   );
 }

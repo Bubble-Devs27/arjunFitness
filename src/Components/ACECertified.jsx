@@ -2,7 +2,7 @@ import React from 'react';
 import { easeOut, motion } from "framer-motion";
 const ACECertified = () => {
   return (
-    <motion.div className="px-2 sm:px-6  md:px-9 " initial ={{opacity :0 , y :70 }} whileInView={{opacity :1 , y:0 }} transition={{duration :0.6 }}  viewport={{amount: 0.1  }}>
+    <motion.div className="px-2 sm:px-6  md:px-9 " initial ={{opacity :0 , y :70 }} whileInView={{opacity :1 , y:0 }} transition={{duration :0.6 }}  viewport={{amount: 0.1, once :true   }} id='ace'>
       <div className="md:flex items-center justify-between   mt-4 text-white p-8 rounded-lg   overflow-hidden rubBack">
        
         {/* Left content */}

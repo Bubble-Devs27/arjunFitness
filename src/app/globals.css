@@ -19,6 +19,9 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: var(--background);
   color: var(--foreground);
@@ -28,9 +31,14 @@ body {
 }
 .css-back {
   background-color: black;
-  background-image: url(./topBG.webp);
+  background-image: url(./Assets/topBG.webp);
   mask-image: linear-gradient(rgba(0, 0, 0, 1) 80%, transparent);
 }
 .rubBack{
-   background-image: url(./mid_bg.webp);
+   background-image: url(./Assets/mid_bg.webp);
+   
+}
+.rubBack2{
+   background-image: url(./Assets/low_bg.png);
+   
 }
