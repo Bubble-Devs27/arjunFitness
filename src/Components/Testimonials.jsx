@@ -87,7 +87,7 @@ const Testimonials = () => {
   };
 
   return (
-    <motion.div className='flex justify-center mt-9' id='testimonials' initial ={{opacity :0  ,y : 20 }} whileInView={{opacity :1 , y:0 }} transition={{duration :2 ,delay :0.2 }}  viewport={{amount: 0.1 , once :true  }}>
+    <motion.div className='flex justify-center '  initial ={{opacity :0  ,y : 20 }} whileInView={{opacity :1 , y:0 }} transition={{duration :2 ,delay :0.2 }}  viewport={{amount: 0.1 , once :true  }}>
     <div className=" bg-black py-8 sm:w-[98%]  overflow-hidden rubBack2 rounded-xl">
         <h1 className=' text-3xl sm:text-4xl text-center mb-8 sm:mb-14' >Client Testimonials</h1>
       <div className="relative">

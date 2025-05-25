@@ -42,3 +42,8 @@ body {
    background-image: url(./Assets/low_bg.png);
    
 }
+.contact-form{
+  background-image: url(./Assets/bot.webp);
+  background-size: cover;
+  background-position: center;
+}

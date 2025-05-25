@@ -11,6 +11,7 @@ import {motion} from "framer-motion"
 import { FaChevronDown } from 'react-icons/fa';
 import Image from 'next/image';
 import logo from './Assets/logo.png'
+import ContactUs from "@/Components/ContactUs";
 export default function Home() {
   console.log(logo)
   return (
@@ -56,7 +57,10 @@ export default function Home() {
     <Myjourney/>
     <div id='plan' className="h-28"></div>
     <Plans/>
+    <div  className="mt-9"  id="testimonials"></div>
     <Testimonials/>
+    <div id="contact" className="h-24"></div>
+    <ContactUs/>
     </>
   );
 }
