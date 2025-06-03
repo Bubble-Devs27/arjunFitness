@@ -1,6 +1,13 @@
+"use-client"
 import React from "react";
 import { easeOut, motion } from "framer-motion";
+import { useRouter } from 'next/navigation';
 const Myjourney = () => {
+  const router = useRouter();
+
+  const goToGallery = () => {
+    router.push('/gallery');
+  };
   return (
     <motion.div
       className="px-2 sm:px-6  md:px-9 "
@@ -21,7 +28,8 @@ const Myjourney = () => {
             myself from someone who struggled with that body image into
             chiseled, muscular who now help others achieve their fitness goals.
           </p>
-          <button className="bg-white text-gray-900 px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors">
+          <button onClick={goToGallery}
+           className="bg-white text-gray-900 px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors">
             View Gallery
           </button>
         </div>

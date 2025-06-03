@@ -37,7 +37,7 @@ const plans = [
     id: 3,
     title: "ULTIMATE PLAN",
     period: "/month",
-    price: "$277",
+    price: "$299",
     subtitle: "(Basic + Advance included)",
     badge: "",
     features: [
@@ -89,7 +89,7 @@ const pricingData = [
     {
       id: 3,
       name: "ULTIMATE PLAN",
-      price: 277,
+      price: 299,
       badge: null,
       badgeColor: "",
       features: [
@@ -119,7 +119,7 @@ const Plans = () => {
   return (
     <motion.div className='flex flex-col  justify-center items-center '  initial ={{opacity :0 ,y:50  }} whileInView={{opacity :1 ,y:0  }} transition={{duration :1 ,delay :0.3 }}  viewport={{amount: 0.3 , once :true  }}>
       <div className=' w-[80%] sm:w-[60%] text-center'>
-        <h1 className='text-3xl sm:text-4xl'>Training Programs</h1>
+        <h1 className='text-3xl sm:text-4xl text-white'>Training Programs</h1>
         <h1 className='text-[16px] sm:text-xl text-gray-400 mt-2.5'>Our plans are designed to be affordable, and aligned to your unique needs.</h1>
       </div>
 

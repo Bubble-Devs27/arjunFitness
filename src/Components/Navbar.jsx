@@ -45,7 +45,7 @@ export default function Navbar() {
         <Link href="#testimonials" scroll={true} className="text-xl font-normal text-white mr-12">
           Testimonials
         </Link>
-        <Link href="/" className="text-xl font-normal text-white">
+        <Link href="#contact" className="text-xl font-normal text-white">
           Contact us
         </Link>
       </div>
