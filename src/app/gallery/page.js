@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import { Camera, Video, Play, Heart, Share } from 'lucide-react';
-const page = () => {
+const Page = () => {
     const [activeTab, setActiveTab] = useState('photos');
     const photos = [
     {
@@ -209,4 +209,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
