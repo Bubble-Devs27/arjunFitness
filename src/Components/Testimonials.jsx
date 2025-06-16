@@ -4,67 +4,67 @@ const Testimonials = () => {
   const testimonialData = [
     {
       id: 1,
-      name: "Babbal Singh",
-      plan: "BASIC PLAN",
-      rating: 4.5,
+      name: "Nihal Sharma",
+      plan: "ULTIMATE PLAN",
+      rating: 4.8,
       image: "/api/placeholder/80/80",
-      review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit amet consectetur adipisicing elit. Adipiscing elit quisque faucibus ex sapien vitae pellentesque."
+      review: "He listens to your goals and helps achieve them step by step. My body feels much stronger and more active than before."
     },
     {
       id: 2,
-      name: "Babbal Singh",
+      name: "Vivek Sandhar",
       plan: "BASIC PLAN",
-      rating: 4.5,
+      rating: 4.2,
       image: "/api/placeholder/80/80",
-      review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit amet consectetur adipisicing elit quisque faucibus ex. Adipiscing elit sapien vitae pellentesque."
+      review: "Workouts are challenging but fun. He motivates you to be regular and consistent. I lost 6 kgs in 2 months with his help."
     },
     {
       id: 3,
-      name: "Babbal Singh",
+      name: "Angad",
       plan: "BASIC PLAN",
       rating: 4.5,
       image: "/api/placeholder/80/80",
-      review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit amet consectetur adipisicing elit. Adipiscing elit quisque faucibus ex sapien vitae pellentesque."
+      review: "Good experience overall. My posture and flexibility have improved. He is patient and makes sure I do the exercises correctly."
     },
     {
       id: 4,
-      name: "Babbal Singh",
-      plan: "BASIC PLAN",
-      rating: 4.5,
+      name: "Naman Verma",
+      plan: "ULTIMATE PLAN",
+      rating: 4.7,
       image: "/api/placeholder/80/80",
-      review: "Lorem ipsum dolor sit amet consectetur adipisicing elit adipisicing elit consectetur adipisicing quisque faucibus ex. Adipisci quisque faucibus ex sapien vitae pellentesque."
+      review: "I had no idea about gym before. He guided me so well. Now fitness is a part of my life, thanks to his training."
     },
     {
       id: 5,
-      name: "Babbal Singh",
-      plan: "BASIC PLAN",
-      rating: 4.5,
+      name: "Nirmanyu ",
+      plan: "ULTIMATE PLAN",
+      rating: 5.0,
       image: "/api/placeholder/80/80",
-      review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit amet consectetur adipisicing elit. Adipiscing elit quisque faucibus ex sapien vitae pellentesque."
+      review: "Very professional and supportive trainer. He gives attention to every person and keeps pushing us in a positive way. Highly recommend him!"
     },
     {
       id: 6,
-      name: "Babbal Singh",
-      plan: "BASIC PLAN",
-      rating: 4.5,
+      name: "Surpreet",
+      plan: "ADVANCE PLAN",
+      rating: 4.0,
       image: "/api/placeholder/80/80",
-      review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit amet consectetur adipisicing elit quisque faucibus ex. Adipiscing elit sapien vitae pellentesque."
+      review: "I joined under him 3 months ago. My stamina and strength have really improved. He is very friendly and explains each workout clearly."
     },
     {
       id: 7,
-      name: "Babbal Singh",
+      name: "Mandeep",
       plan: "BASIC PLAN",
       rating: 4.5,
       image: "/api/placeholder/80/80",
-      review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit amet consectetur adipisicing elit. Adipiscing elit quisque faucibus ex sapien vitae pellentesque."
+      review: "Best decision to train with him. He understands your body and sets the right plan. I feel more confident and energetic now."
     },
     {
       id: 8,
-      name: "Babbal Singh",
-      plan: "BASIC PLAN",
+      name: "Tavjot",
+      plan: "UTLIMATE PLAN",
       rating: 4.5,
       image: "/api/placeholder/80/80",
-      review: "Lorem ipsum dolor sit amet consectetur adipisicing elit adipisicing elit consectetur adipisicing quisque faucibus ex. Adipisci quisque faucibus ex sapien vitae pellentesque."
+      review: "Earlier I used to feel lazy and tired all the time. After training with him, my routine and mindset both have changed for good."
     }
   ];
 
@@ -103,11 +103,11 @@ const Testimonials = () => {
                 className={`${cardHeight} ${cardWidth}  rounded-lg p-4 mx-3 flex-shrink-0 border border-gray-700 relative`}
               >
                 {/* Profile Image Placeholder */}
-                <div className="w-12 h-12 bg-gray-600 rounded-lg mb-3"></div>
+                
                 
                 {/* Name and Plan */}
                 <div className="mb-3">
-                  <h3 className="text-white font-semibold text-sm">{testimonial.name}</h3>
+                  <h3 className="text-white font-semibold text-xl">{testimonial.name}</h3>
                   {testimonial.plan && (
                     <p className="text-[#F6FF91] text-xs font-medium">{testimonial.plan}</p>
                   )}

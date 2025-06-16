@@ -6,40 +6,100 @@ const Page = () => {
     const photos = [
     {
       id: 1,
-      src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop',
-      title: 'Mountain Landscape',
+      src: 'https://res.cloudinary.com/dlcoyxwco/image/upload/v1745486084/IMG-20250418-WA0097_c6fxnm.jpg',
+      title: 'Push. Pull. Repeat',
       likes: 124
     },
     {
       id: 2,
-      src: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop',
-      title: 'Forest Path',
+      src: 'https://res.cloudinary.com/dlcoyxwco/image/upload/v1745486081/IMG-20250418-WA0099_lfvmsn.jpg',
+      title: 'Beast Mode On',
       likes: 89
     },
     {
       id: 3,
-      src: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&h=300&fit=crop',
-      title: 'Lake Reflection',
+      src: 'https://res.cloudinary.com/dlcoyxwco/image/upload/v1745486081/IMG-20250418-WA0095_efi63g.jpg',
+      title: 'No Pain, Glory',
       likes: 156
     },
     {
       id: 4,
-      src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop',
-      title: 'Sunset View',
+      src: 'https://res.cloudinary.com/dlcoyxwco/image/upload/v1745486081/IMG-20250418-WA0093_ffhnll.jpg',
+      title: 'Lift. Sweat. Grow',
       likes: 203
     },
     {
       id: 5,
-      src: 'https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=400&h=300&fit=crop',
-      title: 'Ocean Waves',
+      src: 'https://res.cloudinary.com/dlcoyxwco/image/upload/v1745486080/IMG-20250418-WA0089_x8xlig.jpg',
+      title: 'Muscles Loading Up',
       likes: 178
     },
     {
       id: 6,
-      src: 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=400&h=300&fit=crop',
+      src: 'https://res.cloudinary.com/dlcoyxwco/image/upload/v1745486080/IMG-20250418-WA0091_b6drk5.jpg',
+      title: 'Stronger Every Day',
+      likes: 92
+    },
+    {
+      id: 7,
+      src: 'https://res.cloudinary.com/dlcoyxwco/image/upload/v1745486079/IMG-20250418-WA0087_tuvvq0.jpg',
+      title: 'Built With Grit',
+      likes: 92
+    },
+    {
+      id: 8,
+      src: 'https://res.cloudinary.com/dlcoyxwco/image/upload/v1745486078/IMG-20250418-WA0085_gzfx0p.jpg',
+      title: 'Train Like Hell',
+      likes: 92
+    },
+    {
+      id: 9,
+      src: 'https://res.cloudinary.com/dlcoyxwco/image/upload/v1745486078/IMG-20250418-WA0079_zc6u3k.jpg',
+      title: 'Grind. Gain. Repeat',
+      likes: 92
+    }, 
+    {
+      id: 10,
+      src: 'https://res.cloudinary.com/dlcoyxwco/image/upload/v1745486078/IMG-20250418-WA0083_mjmhxy.jpg',
+      title: 'Chasing Heavy Gains',
+      likes: 92
+    },
+    {
+      id: 11,
+      src: 'https://res.cloudinary.com/dlcoyxwco/image/upload/v1745486078/IMG-20250418-WA0085_gzfx0p.jpg',
+      title: 'Power. Passion. Progress',
+      likes: 92
+    },
+    {
+      id: 12,
+      src: 'https://res.cloudinary.com/dlcoyxwco/image/upload/v1745486078/IMG-20250418-WA0083_mjmhxy.jpg',
+      title: 'Fuel The Fire',
+      likes: 92
+    },
+    {
+      id: 13,
+      src: 'https://res.cloudinary.com/dlcoyxwco/image/upload/v1745486077/IMG-20250418-WA0073_uljgpd.jpg',
+      title: 'Iron Never Lies',
+      likes: 92
+    },
+    {
+      id: 14,
+      src: 'https://res.cloudinary.com/dlcoyxwco/image/upload/v1745486076/IMG-20250418-WA0075_d0z8cx.jpg',
       title: 'Desert Dunes',
       likes: 92
-    }
+    },
+    {
+      id: 15,
+      src: 'https://res.cloudinary.com/dlcoyxwco/image/upload/v1745486074/IMG-20250418-WA0069_emis2h.jpg',
+      title: 'Deadlifts And Dedication',
+      likes: 92
+    },
+    {
+      id: 16,
+      src: 'https://res.cloudinary.com/dlcoyxwco/image/upload/v1745486076/IMG-20250418-WA0071_a4jz3f.jpg',
+      title: 'Discipline Builds Strength',
+      likes: 92
+    },
    ];
 
   
@@ -134,11 +194,10 @@ const Page = () => {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-3">
                         <button className="flex items-center space-x-1 text-white/80 hover:text-red-400 transition-colors">
-                          <Heart className="w-4 h-4" />
-                          <span className="text-sm">{photo.likes}</span>
+                           
                         </button>
                         <button className="text-white/80 hover:text-white transition-colors">
-                          <Share className="w-4 h-4" />
+                          
                         </button>
                       </div>
                     </div>
@@ -149,7 +208,7 @@ const Page = () => {
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {videos.map((video, index) => (
+            {/* {videos.map((video, index) => (
               <div
                 key={video.id}
                 className="group relative overflow-hidden rounded-2xl bg-gray-900 hover:scale-105 transition-all duration-300 cursor-pointer"
@@ -162,20 +221,20 @@ const Page = () => {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   
-                  {/* Play button overlay */}
+                  
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center group-hover:bg-white/30 transition-all duration-300">
                       <Play className="w-8 h-8 text-white ml-1" />
                     </div>
                   </div>
                   
-                  {/* Duration badge */}
+               
                   <div className="absolute bottom-3 right-3 bg-black/70 backdrop-blur-sm px-2 py-1 rounded text-white text-xs font-medium">
                     {video.duration}
                   </div>
                 </div>
                 
-                {/* Video info */}
+                
                 <div className="p-4">
                   <h3 className="text-white font-semibold text-lg mb-2 group-hover:text-gray-300 transition-colors">
                     {video.title}
@@ -183,7 +242,7 @@ const Page = () => {
                   <p className="text-gray-400 text-sm">{video.views.toLocaleString()} views</p>
                 </div>
               </div>
-            ))}
+            ))} */}
           </div>
         )}
       </div>
